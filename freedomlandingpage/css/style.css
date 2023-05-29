@@ -44,14 +44,16 @@ body {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
-	line-height: 125%; /* 20/16 */
+	line-height: 125%;
+	/* 20/16 */
 	transition: background-color 0.3s;
 }
+
 .button:hover {
 	background-color: #980d0b;
 }
 
-.button span{
+.button span {
 	display: block;
 	padding-right: 22px;
 	background: url('../img/Arrov.svg') right no-repeat;
@@ -80,13 +82,30 @@ body {
 
 /* ------------------------------------------ */
 
-.main-blocK {}
+.main-blocK {
+	padding-top: 180px;
+	padding-bottom: 180px;
+}
 
 .main-block__container {}
 
-.main-block__label {}
+.main-blocK__body {
+	max-width: 746px;
+}
 
-.main-block__title {}
+.main-block__label {
+	line-height: 111.111111%;
+	/* 20/18 */
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.main-block__title {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 117.1875%;
+	/* 75/64 */
+}
 
 .main-block__text {}
 
