@@ -19,7 +19,7 @@ body {
 	overflow: clip;
 
 	display: flex;
-	flex-direction: ;
+	flex-direction: column;
 }
 
 .wrapper>main {
@@ -62,7 +62,7 @@ body {
 
 /* ------------------------------------------ */
 .header {
-	position: absolute;
+	position:relative;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -85,12 +85,17 @@ body {
 .main-blocK {
 	padding-top: 180px;
 	padding-bottom: 180px;
+	position: relative;
 }
 
 .main-block__container {}
 
 .main-blocK__body {
 	max-width: 746px;
+}
+
+.main-block__label:not(:last-child) {
+	margin-bottom: 5px;
 }
 
 .main-block__label {
@@ -100,6 +105,10 @@ body {
 	font-weight: 700;
 }
 
+.main-block__title:not(:last-child) {
+	margin-bottom: 10px;
+}
+
 .main-block__title {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -107,8 +116,20 @@ body {
 	/* 75/64 */
 }
 
-.main-block__text {}
+.main-block__text:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.main-block__text {
+	font-weight: 400;
+	line-height: 125%;
+	/* 30/24 */
+}
 
 .main-block__button {}
+
+.main-block__button:not(:last-child) {
+	margin-bottom: 15px;
+}
 
 /* ------------------------------------------ */
