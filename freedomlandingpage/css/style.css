@@ -4,7 +4,6 @@
 @import url("reset.css");
 /* ------------------------------------------ */
 @import url("https://fonts.googleapis.com/css?family=Barlow:regular,700&display=swap");
-
 /* ------------------------------------------ */
 body {
 	font-family: "Barlow", sans-serif;
@@ -12,7 +11,6 @@ body {
 	color: #FFFFFF;
 	background: #191C1F;
 }
-
 /* ------------------------------------------ */
 .wrapper {
 	min-height: 100%;
@@ -21,11 +19,9 @@ body {
 	display: flex;
 	flex-direction: column;
 }
-
 .wrapper>main {
 	flex: 1 1 auto;
 }
-
 /* ------------------------------------------ */
 [class*="__container"] {
 	padding-left: 15px;
@@ -34,7 +30,6 @@ body {
 	/* 1110 + 15 + 15 */
 	max-width: 1140px;
 }
-
 /* ------------------------------------------ */
 .button {
 	background-color: #E11B19;
@@ -44,15 +39,12 @@ body {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
-	line-height: 125%;
-	/* 20/16 */
+	line-height: 125%; /* 20/16 */
 	transition: background-color 0.3s;
 }
-
 .button:hover {
 	background-color: #980d0b;
 }
-
 .button span {
 	display: block;
 	padding-right: 22px;
@@ -85,10 +77,24 @@ body {
 .main-blocK {
 	padding-top: 180px;
 	padding-bottom: 180px;
+	background: url("/freedomlandingpage/img/Home.jpg") center / cover no-repeat;
 	position: relative;
 }
 
-.main-block__container {}
+.main-blocK::before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(837.78% 378.29% at 69.44% -79.86%, rgba(31, 35, 39, 0) 0%, #191C1F 47.89%, rgba(31, 35, 39, 0) 100%)
+}
+
+.main-block__container {
+	position: relative;
+	z-index: 2;
+}
 
 .main-blocK__body {
 	max-width: 746px;
@@ -99,8 +105,8 @@ body {
 }
 
 .main-block__label {
-	line-height: 111.111111%;
-	/* 20/18 */
+	font-size: 18px;
+	line-height: 125%; /* 20/16 */
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -112,8 +118,8 @@ body {
 .main-block__title {
 	text-transform: uppercase;
 	font-weight: 700;
-	line-height: 117.1875%;
-	/* 75/64 */
+	font-size: 64px;
+	line-height: 117.1875%; /* 75/64 */
 }
 
 .main-block__text:not(:last-child) {
@@ -122,8 +128,8 @@ body {
 
 .main-block__text {
 	font-weight: 400;
-	line-height: 125%;
-	/* 30/24 */
+	line-height: 125%;/* 30/24 */
+	font-size: 24px;
 }
 
 .main-block__button {}
